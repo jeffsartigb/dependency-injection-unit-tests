@@ -8,7 +8,6 @@ export class FindToDoUseCase implements IUseCase<string, Promise<ToDo>> {
   }
 
   async execute(id: string) {
-    console.log(id);
     return this.todoService.findTodo(id);
   }
 }
